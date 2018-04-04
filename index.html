@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taasin Saquib</title>
+
+	<!-- jQuery -->
+	<script
+	 src="https://code.jquery.com/jquery-3.2.1.slim.js"
+	 integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+	 crossorigin="anonymous"></script>
+
+	 <!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- TODO: use flexbox instead of bootstrap -->
+
+	<!-- howler.js for sounds -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.9/howler.core.min.js"></script>
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600i,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/styles.css"></style>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</head>
+<body>
+
+	<!-- title -->
+	<h1 align="center">Drum Loops</h1>
+
+	<!-- div holds all of the buttons -->
+	<!-- TODO: add column to select diff instruments -->
+	<div id="buttons" align="center" class="center-block">
+
+		<!-- start, stop playing loop -->
+		<!-- TODO: make bpm variable, style controls -->
+		<button class="controls" onclick="animateMe()">Play</button>
+		<button class="controls" onclick="dontAnimateMe()">Stop</button>
+
+		<!-- each row plays the same sound -->
+		<div id="row1">
+			<button class="button col1 r1"></button>
+			<button class="button col2 r1"></button>
+			<button class="button col3 r1"></button>
+			<button class="button col4 r1"></button>
+		</div>
+
+		<div id="row2">
+			<button class="button col1 r2"></button>
+			<button class="button col2 r2"></button>
+			<button class="button col3 r2"></button>
+			<button class="button col4 r2"></button>
+		</div>
+
+		<div id="row3">
+			<button class="button col1 r3"></button>
+			<button class="button col2 r3"></button>
+			<button class="button col3 r3"></button>
+			<button class="button col4 r3"></button>
+		</div>
+
+		<div id="row4">
+			<button class="button col1 r4"></button>
+			<button class="button col2 r4"></button>
+			<button class="button col3 r4"></button>
+			<button class="button col4 r4"></button>
+		</div>
+
+		<div id="numbers">
+			<button class="number col1">1</button>
+			<button class="number col2">2</button>
+			<button class="number col3">3</button>
+			<button class="number col4">4</button>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+	position: relative;
+	height: 100%;
+}
+
+button{
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#buttons{
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 300px;
+	left: 620px;
+}
+
+.button.active {
+	background: #ea0000;
+	color: #fff;
+}
+
+.number{
+	background-color: white;
+	border: none;
+}
+
+.controls{
+	background-color: white;
+	border: none;
+}
+
+.grey{
+	background-color: grey;
+}
