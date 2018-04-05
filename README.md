@@ -1,4 +1,4 @@
 # TrippyDrums
-A drum sequencer that also visualizes the created beats
+A drum sequencer that creates a simple animation in response to the current beat.
 
-Still in progress
+
