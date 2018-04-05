@@ -24,13 +24,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600i,900" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/styles.css"></style>
-	<script type="text/javascript" src="js/index.js"></script>
 
 </head>
 <body>
 
 	<!-- title -->
 	<h1 align="center">Drum Loops</h1>
+
+	<!-- canvas for paper.js -->
+	<canvas id="visualize"></canvas>
 
 	<!-- div holds all of the buttons -->
 	<!-- TODO: add column to select diff instruments -->
@@ -39,7 +41,8 @@
 		<!-- start, stop playing loop -->
 		<!-- TODO: make bpm variable, style controls -->
 		<button class="controls" onclick="animateMe()">Play</button>
-		<button class="controls" onclick="dontAnimateMe()">Stop</button>
+		<button class="controls" onclick="stopAnimation()">Stop</button>
+		<p>BPM</p><input id="bpm" type="number">
 
 		<!-- each row plays the same sound -->
 		<div id="row1">
@@ -78,6 +81,7 @@
 		</div>
 		
 	</div>
-	
+	<script type="text/javascript" src="js/paper-full.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

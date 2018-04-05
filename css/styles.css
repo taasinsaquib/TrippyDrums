@@ -18,9 +18,13 @@ button{
 	left: 620px;
 }
 
+.white{
+	color: #ffffff;
+}
+
 .button.active {
-	background: #ea0000;
-	color: #fff;
+/*	background: #ea0000;
+	color: #fff;*/
 }
 
 .number{
@@ -35,4 +39,9 @@ button{
 
 .grey{
 	background-color: grey;
+}
+
+#visualize{
+	height: 100vh;
+	width: 100vw;
 }
