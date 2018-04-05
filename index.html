@@ -38,12 +38,6 @@
 	<!-- TODO: add column to select diff instruments -->
 	<div id="buttons" align="center" class="center-block">
 
-		<!-- start, stop playing loop -->
-		<!-- TODO: make bpm variable, style controls -->
-		<button class="controls" onclick="animateMe()">Play</button>
-		<button class="controls" onclick="stopAnimation()">Stop</button>
-		<p>BPM</p><input id="bpm" type="number">
-
 		<!-- each row plays the same sound -->
 		<div id="row1">
 			<button class="button col1 r1"></button>
@@ -79,6 +73,12 @@
 			<button class="number col3">3</button>
 			<button class="number col4">4</button>
 		</div>
+		
+		<!-- start, stop playing loop -->
+		<!-- TODO: make bpm variable, style controls -->
+		<button class="controls" onclick="animateMe()">Play</button>
+		<button class="controls" onclick="stopAnimation()">Stop</button>
+		<p>BPM</p><input id="bpm" type="number">
 		
 	</div>
 	<script type="text/javascript" src="js/paper-full.js"></script>

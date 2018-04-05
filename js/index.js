@@ -72,6 +72,8 @@ $('.button').click(function(){
 // TODO: convert bpm to milliseconds
 $("#bpm").change(function() {
 	dontAnimateMe(0);
+	// var inputVal = $("#bpm").val();
+	// bpm = (inputVal/60) * 1000;
 	bpm = $("#bpm").val();
 	animateMe();
 });
@@ -101,7 +103,7 @@ function animate(row){
 	var randY = getRandomInt(bottom);
 
 	//TODO: randomize location
-	var circle = new Path.Circle(new Point(randX, randY), 100);
+	var circle = new Path.Circle(new Point(randX, randY), 200);
 	circle.strokeColor = 'black';
 	circle.fillColor = getColor(row);	// use unique color for each instrument
 	circles.push(circle);				// push to array to animate
